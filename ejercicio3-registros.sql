@@ -2,7 +2,7 @@
 
 use registros;
 
-SET SQL_SAFE_UPDATES=0; 
+SET SQL_SAFE_UPDATES=1; 
 
 select * from registros_personas;
 
