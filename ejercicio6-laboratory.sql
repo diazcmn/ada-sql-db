@@ -67,4 +67,36 @@ select * from article where price = 100 and price = 110;
 
 select * from article order by price desc;
 
+use laboratory;
+
+insert into client
+(name, last_name, cuit, adress, comments)
+values
+('luciano', 'hernandez', '20-14986008-7', 'francia 615', null),
+('daniela', 'ortiz', '20-37522854-6', 'avellaneda 1532', null),
+('camuel', 'carranza', '20-25487438-8', 'san juan 3', null),
+('ana', 'montenegro', '20-259826642-2', 'urquiza 3451', null),
+('abel', 'cozar', '20-23587071-4', 'san lorenzo 6225', null);
+
+update client set name = 'jose' where id = 1;
+
+update client set name = 'pablo', last_name = 'fuentes', cuit = 20-21053119-0 where id = 3;
+
+delete from client where last_name like 'perez';
+
+ SET SQL_SAFE_UPDATES=0; 
+
+delete from client where cuit = 0;
+
+delete from article where stock = 0;
+
+#faltan de la practica 2 ej 6, 7,8,9
+
+
+
+
+
+
+
+
 
