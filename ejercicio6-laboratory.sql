@@ -92,9 +92,25 @@ delete from article where stock = 0;
 
 #faltan de la practica 2 ej 6, 7,8,9
 
+use laboratory;
 
+select * from invoice where amount >= 3300;
 
+select * from invoice where amount <= 200 ;
 
+select * from invoice where year(2000) and year(2008);
+
+#select * from invoice letter where date = 2016;
+
+select * from invoice where number = 3;
+
+select count(*) from invoice;
+
+select * from invoice where amount = 35000 and amount = 40000;
+
+#de la parte 3 falta 4 y 8
+
+select * from invoice where letter like 'b';
 
 
 
