@@ -90,7 +90,12 @@ delete from client where cuit = 0;
 
 delete from article where stock = 0;
 
-#faltan de la practica 2 ej 6, 7,8,9
+select price, price*0.1, price-(price*0.1) from article where price = 50;
+
+select price, price*0.2, price-(price*0.2) from arcticle where price > 50;
+
+select price, price*0.15, price-(price*0.15) from acticle where price > 200;
+
 
 use laboratory;
 
@@ -100,7 +105,7 @@ select * from invoice where amount <= 200 ;
 
 select * from invoice where year(2000) and year(2008);
 
-#select * from invoice letter where date = 2016;
+select * from invoice letter where date = year(2016);
 
 select * from invoice where number = 3;
 
@@ -108,9 +113,15 @@ select count(*) from invoice;
 
 select * from invoice where amount = 35000 and amount = 40000;
 
-#de la parte 3 falta 4 y 8
+#de la parte 3 falta 7, 8
+
+select count(*) from invoice;
+
+
 
 select * from invoice where letter like 'b';
+
+
 
 
 
