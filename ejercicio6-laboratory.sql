@@ -90,11 +90,11 @@ delete from client where cuit = 0;
 
 delete from article where stock = 0;
 
-select price, price*0.1, price-(price*0.1) from article where price = 50;
+select price, price*0.1, price-(price*0.1) from article where price = 50; #duda
 
-select price, price*0.2, price-(price*0.2) from arcticle where price > 50;
+select price, price*0.2, price-(price*0.2) from arcticle where price > 50; #duda
 
-select price, price*0.15, price-(price*0.15) from acticle where price > 200;
+select price, price*0.15, price-(price*0.15) from acticle where price > 200; #duda
 
 
 use laboratory;
@@ -105,19 +105,15 @@ select * from invoice where amount <= 200 ;
 
 select * from invoice where year(2000) and year(2008);
 
-select * from invoice letter where date = year(2016);
+select * from invoice letter where date = year(2016); #duda
 
 select * from invoice where number = 3;
 
 select count(*) from invoice;
 
-select * from invoice where amount = 35000 and amount = 40000;
+select * from invoice where amount = 35000 and amount = 40000; #duda
 
-#de la parte 3 falta 7, 8
-
-select count(*) from invoice;
-
-
+select count(*) from invoice; #duda
 
 select * from invoice where letter like 'b';
 
